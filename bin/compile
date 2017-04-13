@@ -30,6 +30,8 @@ export_env_dir() {
 
 export_env_dir
 
+echo "-----> gem install bundler"
+gem install bundler --no-document
 echo "-----> yarn install --production"
 yarn install --production
 echo "-----> bundle exec rake webpack:compile"
