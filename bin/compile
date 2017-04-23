@@ -32,8 +32,8 @@ export_env_dir
 
 echo "-----> gem install bundler"
 gem install bundler --no-document
-echo "-----> yarn install --production & npm rebuild node-sass"
-yarn install --production
+echo "-----> yarn install & npm rebuild node-sass"
+yarn install
 npm rebuild node-sass
 echo "-----> bundle exec rake webpack:compile"
 bundle exec rake webpack:compile --trace
